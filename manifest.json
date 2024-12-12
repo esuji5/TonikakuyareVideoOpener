@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "とにかくやる!!ボタン",
   "version": "1.0",
-  "description": "桜井さんのすぐやれ動画をワンクリックで開きます",
+  "description": "桜井政博のゲーム作るにはチャンネルの『# とにかくやれ!! 【仕事の姿勢】』を開きます",
   "permissions": [
     "storage"
   ],
@@ -26,7 +26,7 @@
       "suggested_key": {
         "default": "Alt+Y"
       },
-      "description": "すぐやれ動画を開く"
+      "description": "とにかくやれ動画を開く"
     }
   }
 }
