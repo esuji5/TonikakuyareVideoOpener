@@ -1,5 +1,11 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
   <circle cx="64" cy="64" r="60" fill="#ff4444"/>
-  <path d="M48 38v52l45-26z" fill="white"/>
-  <text x="64" y="120" text-anchor="middle" font-family="Arial" font-size="14" fill="white">すぐやれ!!</text>
+  <path d="M45 35 C45 35, 75 35, 75 35 C75 35, 73 45, 65 55 C57 65, 45 75, 45 85 C45 95, 55 95, 65 85" 
+        stroke="white" 
+        stroke-width="8" 
+        fill="none" 
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <text x="64" y="120" text-anchor="middle" font-family="Arial" font-size="14" fill="white">とにかくやれ!!</text>
 </svg>
