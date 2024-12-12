@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "とにかくやる!!ボタン",
+  "version": "1.0",
+  "description": "桜井さんのすぐやれ動画をワンクリックで開きます",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon.svg",
+      "128": "icons/icon.svg"
+    }
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  },
+  "options_page": "options/options.html",
+  "commands": {
+    "open-video": {
+      "suggested_key": {
+        "default": "Alt+Y"
+      },
+      "description": "すぐやれ動画を開く"
+    }
+  }
+}
