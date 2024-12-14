@@ -3,22 +3,20 @@
   "name": "とにかくやる!!ボタン",
   "version": "1.0",
   "description": "桜井政博のゲーム作るにはチャンネルの『# とにかくやれ!! 【仕事の姿勢】』を開きます",
-  "permissions": [
-    "storage"
-  ],
+  "permissions": ["storage"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": {
-      "48": "icons/icon.svg",
-      "128": "icons/icon.svg"
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
     }
   },
   "icons": {
-    "48": "icons/icon.svg",
-    "128": "icons/icon.svg"
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
   },
   "options_page": "options/options.html",
   "commands": {
