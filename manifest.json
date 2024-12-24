@@ -1,30 +1,29 @@
 {
   "manifest_version": 3,
-  "name": "とにかくやる!!ボタン",
+  "name": "My Image Viewer Extension",
   "version": "1.0",
-  "description": "桜井政博のゲーム作るにはチャンネルの『# とにかくやれ!! 【仕事の姿勢】』を開きます",
-  "permissions": ["storage"],
+  "description": "Extract and display all images from the current page.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": {
+      "16": "gicon.png",
+      "48": "gicon.png",
+      "128": "gicon.png"
+    }
+  },
   "background": {
     "service_worker": "background.js"
   },
-  "action": {
-    "default_popup": "popup/popup.html",
-    "default_icon": {
-      "48": "icons/icon.png",
-      "128": "icons/icon.png"
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
-  },
+  ],
   "icons": {
-    "48": "icons/icon.png",
-    "128": "icons/icon.png"
-  },
-  "options_page": "options/options.html",
-  "commands": {
-    "open-video": {
-      "suggested_key": {
-        "default": "Alt+Y"
-      },
-      "description": "とにかくやれ動画を開く"
-    }
+    "16": "gicon.png",
+    "48": "gicon.png",
+    "128": "gicon.png"
   }
 }
